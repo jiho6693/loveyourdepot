@@ -1,5 +1,5 @@
 const container = document.querySelector('#container');
-const SQUARE_NUM = 500;
+const SQUARE_NUM = 50;
 const colors = ['#e74c3c', '#8e44ad', '#3498db', '#e67e22', '#2ecc71'];
 
 for(let i=0; i<SQUARE_NUM; i++) {
@@ -23,11 +23,7 @@ function setColorToEl(element) {
   //(수평그림자(필수), 수직그림자(필수), 흐림정보(선택), 그림자가 드리우는 정도(선택))
 
 }
-function removeColorFromEl(element) {
-  const color = getRandomColor();
-  element.style.background = '#1d1d1d';
-  element.style.boxShadow = `0 0 2px #000`;
-}
+
 function getRandomColor() {
   return colors[Math.floor(Math.random()*colors.length)]
 }
